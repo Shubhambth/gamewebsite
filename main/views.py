@@ -9,6 +9,11 @@ def game_page(request):
 
 
 
+def game(request):
+    return render(request, 'dd.html')
+
+
+
 
 def serve_ads_txt(request):
     file_path = os.path.join(settings.BASE_DIR, 'ads.txt')
